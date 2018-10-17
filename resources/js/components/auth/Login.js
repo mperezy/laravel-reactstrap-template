@@ -55,7 +55,7 @@ export default class Login extends Component {
                             <div className="col-md-offset-2 col-md-8 col-md-offset-2">
                                 {error != undefined && <div className={name} role="alert">{msg}</div>}
                             </div>
-                            <form className="form-horizontal" role="form" method="POST" onSubmit= {this.onSubmit.bind(this)}>
+                            <Form method={"POST"} onSubmit= {this.onSubmit}>
                                 <FormGroup>
                                     <Label for="email">E-mail Address</Label>
                                     <Input id="email" type="email" ref="email" placeholder={"Your e-mail here"} className="form-control" name="email" onChange={this.onChange.bind(this)} required />
@@ -83,7 +83,7 @@ export default class Login extends Component {
                                         <Link to = "forgotpassword">Forgot Your Password?</Link>
                                     </li>
                                 </FormGroup>
-                            </form>
+                            </Form>
                         </Col>
                         <Col xs={"3"}></Col>
                     </Row>

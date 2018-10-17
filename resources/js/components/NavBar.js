@@ -25,13 +25,13 @@ class NavBar extends Component {
     render() {
         if (this.props.link) {
             return (
-                <nav className="navbar navbar-default">
+                <nav className="nav navbar navbar-default">
                     <div className="container-fluid">
                         <div className="navbar-header">
-                            <a className="navbar-brand" href="#" onClick={this.handleClick.bind(this)}>Basic Authentication</a>
+                            <a className="white-text navbar-brand" href="#" onClick={this.handleClick.bind(this)}>Basic Authentication</a>
                         </div>
-                        <ul className="nav navbar-nav navbar-right">
-                            <a className="navbar-brand" href="#" onClick={this.logout.bind(this)}>{this.props.link}</a>
+                        <ul className="navbar-nav navbar-right">
+                            <a className="white-text navbar-brand" href="#" onClick={this.logout.bind(this)}>{this.props.link}</a>
                         </ul>
                     </div>
                 </nav>

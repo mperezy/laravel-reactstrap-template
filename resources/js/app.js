@@ -18,6 +18,7 @@ import '../css/index.css'
 import Index from './components/Index';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
+import Home from './components/auth/Home';
 import Forgot from './components/auth/Forgot'
 
 if (document.getElementById('root')) {
@@ -27,6 +28,7 @@ if (document.getElementById('root')) {
                 <Route exact path='/' component={Index}/>
                 <Route path='/login' component={Login}/>
                 <Route path='/register' component={Register}/>
+                <Route path='/home' component={Home}/>
                 <Route path='/forgotpassword' component={Forgot}/>
             </Switch>
         </Router>,

@@ -17,3 +17,6 @@ Route::get('{slug}', function() {
     ->where('slug', '(?!api)([A-z\d-\/_.]+)?');
 
 Auth::routes();
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

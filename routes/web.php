@@ -11,12 +11,14 @@
 |
 */
 
-Route::get('{slug}', function() {
+Route::get('/', function() {
     return view('index');
-})
-    ->where('slug', '(?!api)([A-z\d-\/_.]+)?');
+});
 
 Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
